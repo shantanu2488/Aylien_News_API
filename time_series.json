@@ -22,7 +22,7 @@ var opts = {
   'translationsEnTitle': 'translationsEnTitle_example',
   'translationsEnBody': 'translationsEnBody_example',
   'translationsEnText': 'translationsEnText_example',
-  'language': ['null'],
+  'language': ['en'],
   'notLanguage': ['null'],
   'categoriesTaxonomy': 'categoriesTaxonomy_example',
   'categoriesConfident': true,
