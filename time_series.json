@@ -1,0 +1,118 @@
+var AylienNewsApi = require('aylien-news-api');
+var defaultClient = AylienNewsApi.ApiClient.instance;
+// Configure API key authorization: app_id
+var app_id = defaultClient.authentications['app_id'];
+app_id.apiKey = 'YOUR APP ID';
+// Uncomment the following line to set a prefix for the API key, e.g. 'Token' (defaults to null)
+//app_id.apiKeyPrefix = 'Token';
+// Configure API key authorization: app_key
+var app_key = defaultClient.authentications['app_key'];
+app_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. 'Token' (defaults to null)
+//app_key.apiKeyPrefix = 'Token';
+
+var apiInstance = new AylienNewsApi.DefaultApi();
+
+var opts = {
+  'id': [null],
+  'notId': [null],
+  'title': 'title_example',
+  'body': 'body_example',
+  'text': 'text_example',
+  'translationsEnTitle': 'translationsEnTitle_example',
+  'translationsEnBody': 'translationsEnBody_example',
+  'translationsEnText': 'translationsEnText_example',
+  'language': ['null'],
+  'notLanguage': ['null'],
+  'categoriesTaxonomy': 'categoriesTaxonomy_example',
+  'categoriesConfident': true,
+  'categoriesId': ['null'],
+  'notCategoriesId': ['null'],
+  'categoriesLevel': [null],
+  'notCategoriesLevel': [null],
+  'entitiesTitleId': ["entitiesTitleId_example"],
+  'notEntitiesTitleId': ["entitiesTitleId_example"],
+  'entitiesTitleSurfaceFormsText': ["entitiesTitleSurfaceFormsText_example"],
+  'notEntitiesTitleSurfaceFormsText': ["entitiesTitleSurfaceFormsText_example"],
+  'entitiesTitleType': ["entitiesTitleType_example"],
+  'notEntitiesTitleType': ["entitiesTitleType_example"],
+  'entitiesTitleLinksWikipedia': ["entitiesTitleLinksWikipedia_example"],
+  'notEntitiesTitleLinksWikipedia': ["entitiesTitleLinksWikipedia_example"],
+  'entitiesTitleLinksWikidata': ["entitiesTitleLinksWikidata_example"],
+  'notEntitiesTitleLinksWikidata': ["entitiesTitleLinksWikidata_example"], 
+  'entitiesTitleStockTicker': ["entitiesTitleStockTicker_example"],
+  'notEntitiesTitleStockTicker': ["entitiesTitleStockTicker_example"], 
+  'entitiesBodyId': ["entitiesBodyId_example"],
+  'notEntitiesBodyId': ["entitiesBodyId_example"],
+  'entitiesBodySurfaceFormsText': ["entitiesBodySurfaceFormsText_example"],
+  'notEntitiesBodySurfaceFormsText': ["entitiesBodySurfaceFormsText_example"],
+  'entitiesBodyType': ["entitiesBodyType_example"],
+  'notEntitiesBodyType': ["entitiesBodyType_example"],
+  'entitiesBodyLinksWikipedia': ["entitiesBodyLinksWikipedia_example"],
+  'notEntitiesBodyLinksWikipedia': ["entitiesBodyLinksWikipedia_example"],
+  'entitiesBodyLinksWikidata': ["entitiesBodyLinksWikidata_example"],
+  'notEntitiesBodyLinksWikidata': ["entitiesBodyLinksWikidata_example"], 
+  'entitiesBodyStockTicker': ["entitiesBodyStockTicker_example"],
+  'notEntitiesBodyStockTicker': ["entitiesBodyStockTicker_example"],   
+  'mediaImagesCountMin': 56,
+  'mediaImagesCountMax': 56,
+  'mediaImagesWidthMin': 56,
+  'mediaImagesWidthMax': 56,
+  'mediaImagesHeightMin': 56,
+  'mediaImagesHeightMax': 56,
+  'mediaImagesContentLengthMin': 56,
+  'mediaImagesContentLengthMax': 56,
+  'mediaImagesFormat': ['null'],
+  'notMediaImagesFormat': ['null'],
+  'mediaVideosCountMin': 56,
+  'mediaVideosCountMax': 56,
+  'authorId': [null],
+  'notAuthorId': [null],
+  'authorName': 'authorName_example',
+  'notAuthorName': 'authorName_example',
+  'sourceId': [null],
+  'notSourceId': [null],
+  'sourceName': ['null'],
+  'notSourceName': ['null'],
+  'sourceDomain': ['null'],
+  'notSourceDomain': ['null'],
+  'sourceLocationsCountry': ['null'],
+  'notSourceLocationsCountry': ['null'],
+  'sourceLocationsState': ['null'],
+  'notSourceLocationsState': ['null'],
+  'sourceLocationsCity': ['null'],
+  'notSourceLocationsCity': ['null'],
+  'sourceScopesCountry': ['null'],
+  'notSourceScopesCountry': ['null'],
+  'sourceScopesState': ['null'],
+  'notSourceScopesState': ['null'],
+  'sourceScopesCity': ['null'],
+  'notSourceScopesCity': ['null'],
+  'sourceScopesLevel': ['null'],
+  'notSourceScopesLevel': ['null'],
+  'sourceLinksInCountMin': 56,
+  'sourceLinksInCountMax': 56,
+  'sourceRankingsAlexaRankMin': 56,
+  'sourceRankingsAlexaRankMax': 56,
+  'sourceRankingsAlexaCountry': ['null'],
+  'socialSharesCountFacebookMin': 56,
+  'socialSharesCountFacebookMax': 56,
+  'socialSharesCountGooglePlusMin': 56,
+  'socialSharesCountGooglePlusMax': 56,
+  'socialSharesCountLinkedinMin': 56,
+  'socialSharesCountLinkedinMax': 56,
+  'socialSharesCountRedditMin': 56,
+  'socialSharesCountRedditMax': 56,
+  'publishedAtStart': 'publishedAtStart_example',
+  'publishedAtEnd': 'publishedAtEnd_example',
+  'period': 'period_example',
+  'query': 'enhanced_query_example'
+};
+
+apiInstance.listTimeSeries(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data.time_series);
+  }
+});
