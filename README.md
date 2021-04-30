@@ -22,5 +22,7 @@ In Media Monitoring, sentiment analysis is an invaluable tool for tracking brand
 With the Timeseries endpoint, we can aggregate the stories that meet our search criteria and analyse their sentiment en masse. While AYLIEN’s News API classifies documents and entities as having a positive, negative or neutral sentiment, focusing on the polarised positive and negative stories only gives us a better indication if a subject is being viewed in a good or bad light.
 
 
+Kudos!!
+
 
 
